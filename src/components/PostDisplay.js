@@ -33,7 +33,7 @@ const PostDisplay = ({ dispatchEditPost, dispatchDeletePost, id, title, url, des
 
   return (
     <>
-      <Card style={{ width: '29rem' }}>
+      <Card className='mt-2' style={{ width: '29rem' }}>
         {
           !edit && (
             <Card.Img variant="top" src={url} />
