@@ -9,12 +9,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 const Post = ({ postList }) => {
   return (
     <>
-      <Container className='ml-3'>
+      <Container>
       <Row xs={1} md={2} className="g-4">
         {
-          // Array.from({ length: posts.length}).map((_, idx) => {
-          //   posts[idx]
-          // })
           postList.map(post =>
             <Col key={post.id}>
               <PostDisplay id={post.id} title={post.title}
