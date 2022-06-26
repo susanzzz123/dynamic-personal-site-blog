@@ -51,13 +51,10 @@ const PostDisplay = ({ dispatchEditPost, dispatchDeletePost, id, title, url, des
                   </Col>
                   <Col sm={1}>
                     <IconContext.Provider value={{ color: 'red', size: '1.25em' }}>
-                      <OverlayTrigger placement='bottom'
-                      delay={{ show: 250, hide: 400 }} overlay={<Tooltip>delete</Tooltip>}>
-                        <strong>
-                          <BsTrash style={{ cursor: 'pointer' }} onClick={() => dispatchDeletePost(id)}>
-                          </BsTrash>
-                        </strong>
-                      </OverlayTrigger>
+                      <strong>
+                        <BsTrash style={{ cursor: 'pointer' }} onClick={() => dispatchDeletePost(id)}>
+                        </BsTrash>
+                      </strong>
                     </IconContext.Provider>
                   </Col>
                 </Row>
